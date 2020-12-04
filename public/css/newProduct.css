@@ -1,0 +1,16 @@
+.new-product
+{
+    border: 1px solid green;
+    margin: 30px auto;
+    padding: 10px;
+}
+.new-product button
+{
+    margin: 5px 5px;
+}
+img
+{
+    border: 1px dotted rebeccapurple;
+    border-radius: 10px;
+    margin: auto auto;
+}

@@ -1,0 +1,17 @@
+.signup
+{
+    width: 50%;
+    border: 1px solid brown;
+    margin: 40px auto;
+    padding: 10px;
+}
+.form-group
+{
+    width: 90%;
+    margin: 5px auto;
+}
+.form-group .role
+{
+    width: 50%;
+    text-align: center;
+}
