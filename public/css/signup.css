@@ -15,3 +15,11 @@
     width: 50%;
     text-align: center;
 }
+.wrong
+{
+    color: red;
+}
+.good
+{
+    color: green;
+}

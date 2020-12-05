@@ -14,7 +14,8 @@
 <div class="container new-product">
   <h4 class="text-center">Add New Product</h4>
 
-<form class="needs-validation" novalidate>
+<form class="needs-validation" novalidate 
+  method="POST" action="/product/addNew" enctype="multipart/form-data">
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationTooltip01">Product Name</label>
@@ -34,13 +35,13 @@
   <div class="form-row align-items-center">
     <div class="custom-file col-sm-5">
         <div class="input-group mb-3">
-            <div class="input-group-prepend">
+            <!-- <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-            </div>
-            <div class="custom-file">
-              <input type="file" class="custom-file-input" id="imgFile" aria-describedby="inputGroupFileAddon01" accept="image/*" onchange="showFiles()">
-              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-            </div>
+            </div> -->
+           
+              <input type="file" name="product" id="imgFile"  accept="image/*" onchange="showFiles()">
+              
+            
         </div>    
     </div>
     <div class="col-sm-5">

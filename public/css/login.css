@@ -4,3 +4,11 @@
     width: 50%;
     border: 1px solid saddlebrown;
 }
+.wrong
+{
+    color: red;
+}
+.good
+{
+    color: green;
+}
