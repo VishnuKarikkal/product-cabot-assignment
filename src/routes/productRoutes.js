@@ -22,7 +22,10 @@ router.get('/products', (req,res)=>
     {
         if(data.length > 0)
         {
-            res.json({"msg":"got it","products":data})
+            res.render('cart',
+            {
+                products:data
+            })
         }
         else
         {

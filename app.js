@@ -24,14 +24,19 @@ app.use('/auth',authRoutes);
 const db =require('./config/db').database;
 mongoose.connect(db,{useNewUrlParser:true, useUnifiedTopology: true})
                 .then(console.log("Successful DB connection established"))
-                .catch(err=>console.log("error in DB conncetion"));
+                .catch(err=>console.log("error in DB connection"));
 
         //root request handler
 app.get('/',(req,res)=>
 {
     res.render('index')
 })
-        
+        app.get('/cart',(req,res)=>
+        {
+                res.render("cart",
+                        {
+                        })
+        })
         //server setup
 port=process.env.PORT || 3000 ;
 app.listen(port,()=>{console.log("server up at",port)});
